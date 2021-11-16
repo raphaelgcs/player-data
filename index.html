@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Player Stats</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player-card">
+        <section class="card-top">
+          <label class="wrap">
+            <select name="player-options" class="player-options dropdown">
+              <option value="" selected="true" disabled="true">Select a player...</option>
+            </select>
+          </label>
+
+          <img class="player-picture" />
+          <div class="team-logo"></div>
+        </section>
+        
+        <section class="card-bottom">
+          <div class="player-header">
+            <h1 class="player-name"></h1>
+            <h4 class="player-position"></h4>
+          </div>
+          <div class="player-body">
+            <ul>
+              <li class="player-stat">
+                <div>Appearances</div>
+                <div class="stat-value appearances"></div>
+              </li>
+              <li class="player-stat">
+                <div>Goals</div>
+                <div class="stat-value goals"></div>
+              </li>
+              <li class="player-stat">
+                <div>Assists</div>
+                <div class="stat-value assists"></div>
+              </li>
+              <li class="player-stat">
+                <div>Goals per match</div>
+                <div class="stat-value goals-per-match"></div>
+              </li>
+              <li class="player-stat">
+                <div>Passes per minute</div>
+                <div class="stat-value passes-per-minute"></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2834e97f9a.js" crossorigin="anonymous"></script>
+    <script src='script.js'></script>
+  </body>
+</html>
